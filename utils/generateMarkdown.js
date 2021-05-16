@@ -49,7 +49,7 @@ function generateMarkdown(data) {
   * [Questions](#questions)
   
   # Installation
-  The following dependences are needed to be installed to run the application: 
+  The following dependencies are needed to be installed to run the application: 
   ${data.Installation}
   # Usage
   ${data.Usage}
