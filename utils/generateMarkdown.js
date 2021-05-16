@@ -15,7 +15,19 @@
 
 // TODO: Create a function that returns the License link
 // If there is no License, return an empty string
-function renderLicenseLink(License) {}
+function renderLicenseLink(data) {
+  let link ="";
+    if (data.License == "MIT") {
+      link = '[MIT License](https://opensource.org/licenses/MIT)'
+    } else if (data.License == 'ISC') {
+      link = '[ISC License](https://opensource.org/licenses/ISC)'
+    } else if (data.License == 'GPLv3') {
+      link = '[GNU GPLv3 License](https://www.gnu.org/licenses/gpl-3.0.en.html)'
+    } else {
+      link = "None"
+    }
+    return link
+}
 
 // TODO: Create a function that returns the License section of README
 // If there is no License, return an empty string
@@ -27,6 +39,7 @@ function generateMarkdown(data) {
  
   # Description
   ${data.Description}
+
   # Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -42,6 +55,7 @@ function generateMarkdown(data) {
   ${data.Usage}
   # License
   This application runs under the ${data.License} license.
+  ${renderLicenseLink(data)}
   # Contributors:
   ${data.Contributors}
   # Tests
