@@ -21,7 +21,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What will this applic ation be used for?',
+        message: 'What will this application be used for?',
         name: 'Usage',
     },
     {
