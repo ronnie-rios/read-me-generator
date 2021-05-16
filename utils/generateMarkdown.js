@@ -12,10 +12,10 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
-  https://github.com/${data.Username}/${data.title}
+  return `# ${data.Title}
+  https://github.com/${data.Username}/${data.Title}
   # Description
-  ${data.description}
+  ${data.Description}
   # Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -23,6 +23,20 @@ function generateMarkdown(data) {
   * [Contributors](#contributors)
   * [Tests](#tests)
   * [Questions](#questions)
+  
+  # Installation
+  The following dependences are needed to be installed to run the application: 
+  ${data.Installation}
+  # Usage
+  ${data.Usage}
+  # License
+  This application runs under the ${data.License} license.
+  # Contributors:
+  ${data.Contributors}
+  # Tests
+  How to run tests: ${data.Tests}
+  # Questions
+  If there are any questions, issues contact ${data.Username} or email at ${data.Email}
 `;
 }
 
