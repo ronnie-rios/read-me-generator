@@ -28,7 +28,7 @@ const questions = [
         type: 'list',
         message: "What license are you using?",
         name: 'License',
-        choices: ['MIT', 'GNU', 'Apache License 2.0'],
+        choices: ['MIT', 'GNU GPLv3', 'Apache'],
     },
     {
         type: 'input',
