@@ -3,8 +3,7 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 // TODO: Create an array of questions for user input
 const questions = [
- 
-    {
+     {
         type: 'input',
         message: 'What is the title of your project?',
         name: 'Title',
@@ -20,10 +19,25 @@ const questions = [
         name: 'Installation',
     },
     {
+        type: 'input',
+        message: 'What will this applic ation be used for?',
+        name: 'Usage',
+    },
+    {
         type: 'list',
         message: "What license are you using?",
         name: 'License',
         choices: ['MIT', 'GNU', 'Apache License 2.0'],
+    },
+    {
+        type: 'input',
+        message: 'Please list any contributors.',
+        name: 'Contributors',
+    },
+    {
+        type: 'input',
+        message: 'What commands are needed to test this application?',
+        name: 'Tests',
     },
     {
         type:"input",
@@ -36,10 +50,13 @@ const questions = [
         name: "Email",
     },
 
+
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+ fs.writeFile('')
+}
 
 // TODO: Create a function to initialize app
 function init() {}
